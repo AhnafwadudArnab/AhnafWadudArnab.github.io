@@ -43,9 +43,9 @@ document.addEventListener('DOMContentLoaded', () => {
   const typedTarget = document.querySelector('.hero-typed-role');
   if (typedTarget) {
     const roles = [
-      'COMPUTER SCIENCE & ENGINEERING \nSTUDENT',
-      'FLUTTER CROSS-PLATFORM DEVELOPER',
-      'FULL-STACK DEVELOPER',
+      'FLUTTER & FULL-STACK DEVELOPER',
+      'COMPUTER SCIENCE & ENGINEERING \n Student',
+      'MOBILE APP ARCHITECT',
       'PROBLEM SOLVER'
     ];
 
@@ -143,7 +143,7 @@ document.addEventListener('DOMContentLoaded', () => {
       avatar: "images/avatar_tanvir.png"
     },
     {
-      quote: "Collaborating with Ahnaf on the Amar Rail Sheba railway project was an impressive experience. He engineered an intuitive train route search, seat selection system, and reliable REST API workflows with exceptional attention to detail.",
+      quote: "Ahnaf did a phenomenal job building the BiteRight nutrition tracking app. His work with React Native, Supabase data synchronization, and intuitive macro-tracking workflows made the app fast, reliable, and user-friendly.",
       name: "Sarah Jenkins",
       role: "Engineering Director",
       avatar: "images/avatar_sarah.png"
@@ -223,7 +223,7 @@ document.addEventListener('DOMContentLoaded', () => {
     statsObserver.observe(statsSection);
   }
 
-  // 7. Contact Form Handler (Formspree)
+  // 7. Contact Form Handler (Formspree + Gmail/Mailto Direct Fallback)
   const contactForm = document.getElementById('contactForm');
   const statusEl = document.getElementById('form-status');
 
@@ -232,6 +232,22 @@ document.addEventListener('DOMContentLoaded', () => {
       e.preventDefault();
       const submitBtn = contactForm.querySelector('button[type="submit"]');
       const originalText = submitBtn.innerHTML;
+
+      const nameVal = contactForm.querySelector('[name="name"]')?.value || 'Recruiter/Visitor';
+      const emailVal = contactForm.querySelector('[name="email"]')?.value || '';
+      const msgVal = contactForm.querySelector('[name="message"]')?.value || '';
+      
+      const mailSubject = encodeURIComponent(`Portfolio Inquiry from ${nameVal}`);
+      const mailBody = encodeURIComponent(`Hi Ahnaf,
+
+Name: ${nameVal}
+Email: ${emailVal}
+
+Message:
+${msgVal}
+`);
+      const gmailUrl = `https://mail.google.com/mail/?view=cm&fs=1&to=ahanafwadudarnob@gmail.com&su=${mailSubject}&body=${mailBody}`;
+      const mailtoUrl = `mailto:ahanafwadudarnob@gmail.com?subject=${mailSubject}&body=${mailBody}`;
 
       submitBtn.disabled = true;
       submitBtn.innerHTML = `<span>Sending...</span>`;
@@ -247,16 +263,19 @@ document.addEventListener('DOMContentLoaded', () => {
         });
 
         if (res.ok) {
-          statusEl.textContent = "✅ Message sent successfully! I'll get back to you soon.";
+          statusEl.innerHTML = `✅ Message sent successfully! I will reply to you shortly.<br><span style="display:inline-block; margin-top:0.4rem; font-size:0.85rem; color:#9ca3af;">You can also <a href="${gmailUrl}" target="_blank" rel="noopener noreferrer" style="color:#ff5722; text-decoration:underline; font-weight:600;">open directly in Gmail ↗</a> or <a href="${mailtoUrl}" style="color:#ff5722; text-decoration:underline;">default email app</a>.</span>`;
           statusEl.style.color = '#ff5722';
           contactForm.reset();
         } else {
-          statusEl.textContent = '❌ Failed to send message. Please try again or email directly.';
-          statusEl.style.color = '#ef4444';
+          // If Formspree fails or quota reached, open Gmail/Mailto
+          window.open(gmailUrl, '_blank') || (window.location.href = mailtoUrl);
+          statusEl.innerHTML = `⚠️ Opening Gmail / Mail app to send directly to <strong>ahanafwadudarnob@gmail.com</strong>...<br><a href="${gmailUrl}" target="_blank" rel="noopener noreferrer" style="color:#ff5722; text-decoration:underline; font-weight:600; display:inline-block; margin-top:0.4rem;">Click here to open in Gmail ↗</a>`;
+          statusEl.style.color = '#ff5722';
         }
       } catch (err) {
-        statusEl.textContent = '❌ An error occurred. Please try again or email directly.';
-        statusEl.style.color = '#ef4444';
+        window.open(gmailUrl, '_blank') || (window.location.href = mailtoUrl);
+        statusEl.innerHTML = `⚠️ Opening Gmail / Mail app to send directly to <strong>ahanafwadudarnob@gmail.com</strong>...<br><a href="${gmailUrl}" target="_blank" rel="noopener noreferrer" style="color:#ff5722; text-decoration:underline; font-weight:600; display:inline-block; margin-top:0.4rem;">Click here to open in Gmail ↗</a>`;
+        statusEl.style.color = '#ff5722';
       } finally {
         submitBtn.disabled = false;
         submitBtn.innerHTML = originalText;
