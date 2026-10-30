@@ -1819,7 +1819,7 @@ textarea.form-input {
 
 .footer-top-grid {
   display: grid;
-  grid-template-columns: 1.3fr 0.8fr 1.1fr 1fr;
+  grid-template-columns: 1.4fr 1fr 1.2fr;
   gap: 3rem;
   margin-bottom: 3.5rem;
 }
@@ -1876,56 +1876,15 @@ textarea.form-input {
   line-height: 1.5;
 }
 
-.footer-sub-text {
-  font-size: 0.88rem;
-  color: var(--text-secondary);
-  margin-bottom: 1rem;
-}
-
-.newsletter-form-row {
-  display: flex;
-  align-items: center;
-}
-
-.newsletter-input {
-  flex: 1;
-  background: #141720;
-  border: 1px solid var(--border-subtle);
-  border-radius: var(--radius-sm) 0 0 var(--radius-sm);
-  padding: 0.75rem 1rem;
-  color: #fff;
-  font-size: 0.85rem;
-  outline: none;
-}
-
-.newsletter-input:focus {
-  border-color: var(--accent-orange);
-}
-
-.newsletter-btn {
-  background: var(--accent-orange);
-  border: none;
-  border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
-  padding: 0.75rem 1rem;
-  color: #fff;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: var(--transition);
-}
-
-.newsletter-btn:hover {
-  background: var(--accent-orange-hover);
-}
 
 .footer-bottom-bar {
   border-top: 1px solid var(--border-subtle);
   padding-top: 2rem;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  font-size: 0.82rem;
+  justify-content: center;
+  text-align: center;
+  font-size: 0.85rem;
   color: var(--text-muted);
 }
 
