@@ -44,7 +44,7 @@ document.addEventListener('DOMContentLoaded', () => {
   if (typedTarget) {
     const roles = [
       'FLUTTER & FULL-STACK DEVELOPER',
-      'COMPUTER SCIENCE & ENGINEERING \n Student',
+      'COMPUTER SCIENCE & ENGINEERING\nSTUDENT',
       'MOBILE APP ARCHITECT',
       'PROBLEM SOLVER'
     ];
