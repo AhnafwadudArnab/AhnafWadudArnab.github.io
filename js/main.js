@@ -194,7 +194,9 @@ document.addEventListener('DOMContentLoaded', () => {
   const animateStats = () => {
     if (animatedStats) return;
     statNumbers.forEach((stat) => {
-      const target = parseInt(stat.getAttribute('data-target') || '0', 10);
+      const targetAttr = stat.getAttribute('data-target');
+      if (!targetAttr) return; // Preserve text elements like "1st"
+      const target = parseInt(targetAttr, 10);
       const suffix = stat.getAttribute('data-suffix') || '';
       let count = 0;
       const step = Math.max(1, Math.floor(target / 40));

@@ -2285,3 +2285,151 @@ textarea.form-input {
   background: var(--accent-orange);
   border-radius: 2px;
 }
+
+
+/* ==========================================================================
+   Honors, Awards & Publications Showcase Grid
+   ========================================================================== */
+.honors-showcase-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+  margin-top: 2.5rem;
+}
+
+.award-showcase-card {
+  background: #0e1117;
+  border: 1px solid var(--border-subtle);
+  border-left: 3px solid var(--accent-orange);
+  border-radius: var(--radius-md);
+  padding: 1.6rem 1.85rem;
+  transition: transform var(--transition), border-color var(--transition);
+}
+
+.award-showcase-card:hover {
+  transform: translateY(-3px);
+  border-color: rgba(255, 87, 34, 0.45);
+}
+
+.award-showcase-card .research-badge-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0.85rem;
+}
+
+.award-badge {
+  color: #ff9800 !important;
+  background: rgba(255, 152, 0, 0.12) !important;
+  border-color: rgba(255, 152, 0, 0.3) !important;
+}
+
+.award-card-desc {
+  font-size: 0.88rem;
+  color: var(--text-secondary);
+  line-height: 1.55;
+  margin: 0.35rem 0 0.65rem 0;
+}
+
+.award-showcase-card .research-title {
+  font-size: clamp(1.02rem, 1.6vw, 1.18rem);
+  font-weight: 700;
+  line-height: 1.45;
+  color: var(--text-white);
+  margin: 0 0 0.5rem 0;
+}
+
+.award-showcase-card .timeline-org {
+  display: inline-block;
+  font-size: 0.86rem;
+  color: var(--text-muted);
+  font-weight: 500;
+}
+
+@media (max-width: 900px) {
+  .honors-showcase-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ==========================================================================
+   Categorized Technical Competencies
+   ========================================================================== */
+.competencies-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+  margin-top: 3rem;
+}
+
+.competency-card {
+  background: #0e1117;
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  padding: 1.75rem;
+  transition: transform var(--transition), border-color var(--transition);
+}
+
+.competency-card:hover {
+  transform: translateY(-3px);
+  border-color: rgba(255, 87, 34, 0.35);
+}
+
+.competency-header {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 0.5rem;
+}
+
+.competency-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: var(--radius-sm);
+  background: rgba(255, 255, 255, 0.04);
+}
+
+.competency-title {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--text-white);
+  margin: 0;
+}
+
+.competency-desc {
+  font-size: 0.86rem;
+  color: var(--text-secondary);
+  line-height: 1.5;
+  margin-bottom: 1.15rem;
+}
+
+.competency-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.c-tag {
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  background: #141720;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  padding: 0.28rem 0.65rem;
+  border-radius: var(--radius-sm);
+  transition: color var(--transition), border-color var(--transition);
+}
+
+.competency-card:hover .c-tag {
+  color: #fff;
+  border-color: rgba(255, 87, 34, 0.25);
+}
+
+@media (max-width: 768px) {
+  .competencies-grid {
+    grid-template-columns: 1fr;
+  }
+}
