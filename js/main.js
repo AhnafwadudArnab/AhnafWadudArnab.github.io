@@ -131,7 +131,7 @@ document.addEventListener('DOMContentLoaded', () => {
   // 5. Testimonials Carousel
   const testimonials = [
     {
-      quote: "Ahnaf demonstrates an exceptional grasp of software engineering and mobile computing. His technical discipline, problem-solving mindset, and ability to build scalable, high-performance applications with clean architecture are truly impressive. A talented developer who consistently exceeds expectations.",
+      quote: "Ahnaf's engineering on the RapidTest medical diagnostic client was truly exemplary. He built a high-performance Flutter mobile architecture capable of seamless QR kit scanning, instant camera photo evidence capture, and real-time Cloud Firestore synchronization under demanding field conditions. His architectural discipline, clean code, and proactive problem-solving made a substantial impact.",
       name: "Mokter Mahmud Chowdhury",
       role: "Research Scientist & Innovation Lead",
       avatar: "images/avatar_mmc.png"
