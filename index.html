@@ -1,735 +1,1353 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-	<title>Ahnaf Wadud Portfolio</title>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="color-scheme" content="dark">
+  <meta name="theme-color" content="#0b0c10">
+  <meta name="description" content="Ahnaf Wadud Arnab - Flutter Developer & Computer Science and Engineering Student. Building fast, responsive and pixel-perfect mobile applications.">
+  <meta name="author" content="Ahnaf Wadud Arnab">
+  
+  <title>Ahnaf Wadud Arnab | Flutter Developer & CSE Undergrad</title>
 
-	<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+  <!-- Favicon -->
+  <link rel="icon" type="image/jpeg" href="images/ahnaf_avatar.jpg">
 
-	<link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
-	<link rel="stylesheet" href="css/animate.css">
+  <!-- Google Fonts: Plus Jakarta Sans, JetBrains Mono, Caveat -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=JetBrains+Mono:wght@400;500;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
 
-	<link rel="stylesheet" href="css/owl.carousel.min.css">
-	<link rel="stylesheet" href="css/owl.theme.default.min.css">
-	<link rel="stylesheet" href="css/magnific-popup.css">
-
-	<link rel="stylesheet" href="css/aos.css">
-
-	<link rel="stylesheet" href="css/ionicons.min.css">
-
-	<link rel="stylesheet" href="css/flaticon.css">
-	<link rel="stylesheet" href="css/icomoon.css">
-	<link rel="stylesheet" href="css/style.css">
-
-
-
-	<style>
-		/*======================================
-//--//-->   ABOUT
-======================================*/
-
-		.about-mf .box-shadow-full {
-			padding-top: 4rem;
-			padding-bottom: 4rem;
-		}
-
-		.about-mf .about-img {
-			margin-bottom: 2rem;
-		}
-
-		.about-mf .about-img img {
-			margin-left: 10px;
-		}
-
-
-		.skill-mf .progress {
-			/* background-color: #cde1f8; */
-			margin: .5rem 0 1.2rem 0;
-			border-radius: 0;
-			height: .7rem;
-		}
-
-		.skill-mf .progress .progress-bar {
-			height: .7rem;
-			background-color: #ffbd39;
-		}
-
-
-		/* Animation styles */
-		#typing-animation {
-			position: relative;
-			font-size: 30px;
-			font-weight: bold;
-			color: rgb(255, 255, 255);
-			overflow: hidden;
-			white-space: nowrap;
-			animation: typing 3s steps(20, end) infinite;
-		}
-
-		#typing-animation:before {
-			content: "";
-			/* position: absolute; */
-			top: 0;
-			left: 0;
-			width: 0;
-			height: 100%;
-			background-color: #ccc;
-			animation: typing-cursor 0.5s ease-in-out infinite;
-		}
-
-		@keyframes typing {
-			from {
-				width: 0;
-			}
-
-			to {
-				width: 100%;
-			}
-		}
-
-		@keyframes typing-cursor {
-			from {
-				width: 5px;
-			}
-
-			to {
-				width: 0;
-			}
-		}
-
-
-		/* project image zoom effect */
-
-		.zoom-effect {
-			overflow: hidden;
-			transition: transform 0.3s ease-out;
-		}
-
-		.zoom-effect:hover {
-			transform: scale(1.1);
-		}
-	</style>
-
-
+  <!-- Core Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+<body>
+  <!-- Ambient Background Glows -->
+  <div class="bg-glow-orb orb-hero" aria-hidden="true"></div>
+  <div class="bg-glow-orb orb-mid" aria-hidden="true"></div>
 
+  <!-- Header / Navigation -->
+  <header class="site-header">
+    <div class="container nav-container">
+      <!-- Brand Logo with Stylized Geometric Icon -->
+      <a href="#home" class="brand-logo" aria-label="Ahnaf Wadud Portfolio">
+        <svg class="logo-icon-svg" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M4 26L16 4L28 26H20L16 17L12 26H4Z" fill="#ff5722"/>
+          <path d="M16 11L19.5 19H12.5L16 11Z" fill="#0b0c10"/>
+        </svg>
+        <span>AHNAF <span class="logo-orange">DEV</span></span>
+      </a>
 
-	<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
-		<div class="container">
-			<a class="navbar-brand" href="index.html">Ahnaf Wadud</a>
-			<button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse"
-				data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="oi oi-menu"></span> Menu
-			</button>
+      <!-- Desktop & Mobile Navigation Links -->
+      <nav aria-label="Main Navigation">
+        <ul class="nav-menu">
+          <li><a href="#home" class="nav-link active">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#experience" class="nav-link">Experience</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#services" class="nav-link">Services</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
 
-			<div class="collapse navbar-collapse" id="ftco-nav">
-				<ul class="navbar-nav nav ml-auto">
-					<li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
-					<li class="nav-item"><a href="#about-section" class="nav-link"><span>About</span></a></li>
-					<li class="nav-item"><a href="#resume-section" class="nav-link"><span>Resume</span></a></li>
-					<li class="nav-item"><a href="#project-section" class="nav-link"><span>Projects</span></a></li>
-					<li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
-				</ul>
-			</div>
-		</div>
-	</nav>
-	<section id="home-section" class="hero">
-		<div class="home-slider  owl-carousel">
-			<div class="slider-item ">
-				<div class="overlay"></div>
-				<div class="container">
-					<div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end">
-						<div class="one-third js-fullheight order-md-last img"
-							style="background-image:url(images/bgphoto.png);">
-							<div class="overlay"></div>
-						</div>
-						<div class="one-forth d-flex  align-items-center ftco-animate">
-							<div class="text">
-								<span class="subheading">Hello!</span>
-								<h1 class="mb-4 mt-3">I'm <span>Ahnaf Wadud Arnab</span></h1>
+      <!-- Header Action & Mobile Menu Button -->
+      <div style="display: flex; align-items: center; gap: 1rem;">
+        <a href="#contact" class="header-cta-btn">
+          <span>Let's Talk</span>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="7" y1="17" x2="17" y2="7"></line>
+            <polyline points="7 7 17 7 17 17"></polyline>
+          </svg>
+        </a>
 
-								<!-- Element to contain animated typing -->
-								<span id="typing-animation"></span>
+        <button class="mobile-toggle" aria-label="Toggle Navigation Menu" aria-expanded="false">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
 
-								<script>
+  <main>
+    <!-- ==========================================================================
+         Hero Section
+         ========================================================================== -->
+    <section id="home" class="hero-section">
+      <div class="container hero-grid">
+        <!-- Hero Left Column -->
+        <div class="hero-content">
+          <!-- Floating Dim Code Snippet Decoration -->
+          <div class="hero-code-block" aria-hidden="true">
+            <pre><code><span class="code-kw">const</span> <span class="code-var">developer</span> = {
+  <span class="code-prop">name</span>: <span class="code-str">'Ahnaf Wadud Arnab'</span>,
+  <span class="code-prop">role</span>: <span class="code-str">'Flutter &amp; Full-Stack (MERN) Developer'</span>,
+  <span class="code-prop">passion</span>: <span class="code-str">'Building high-performance mobile &amp; web apps'</span>,
+  <span class="code-prop">skills</span>: [<span class="code-str">'Flutter'</span>, <span class="code-str">'Dart'</span>, <span class="code-str">'React'</span>, <span class="code-str">'Node.js'</span>, <span class="code-str">'MongoDB'</span>, <span class="code-str">'Express'</span>, <span class="code-str">'Firebase'</span>]
+};
 
-									// Initialize the typing animation
-									const typingAnimationElement = document.getElementById('typing-animation');
+<span class="code-kw">function</span> <span class="code-func">createMagic</span>() {
+  <span class="code-kw">return</span> <span class="code-str">'Clean Code + Pixel-Perfect UI'</span>;
+}
 
-									// Create an array of typing text
-									const typingTexts = [
-										'Flutter Developer',
-									];
+<span class="code-func">createMagic</span>();</code></pre>
+          </div>
 
-									// Create a function to display the typing animation for a given text
-									function playTypingAnimation(text) {
-										// Loop through each character and add it to the element
-										for (let i = 0; i < text.length; i++) {
-											setTimeout(() => {
-												typingAnimationElement.textContent += text[i];
-											}, i * 200); // Increase the delay to slow down the typing animation
-										}
+          <div class="hero-greeting">
+            <span>👋</span>
+            <span>Hello, I'm</span>
+          </div>
 
-										// Once the animation is complete, reset the text and start over
-										setTimeout(() => {
-											typingAnimationElement.textContent = '';
-											playTypingAnimation(typingTexts[(typingTexts.indexOf(text) + 1) % typingTexts.length]);
-										}, text.length * 200);
-									}
+          <h1 class="hero-title">
+            AHNAF <span class="title-orange">WADUD</span>
+          </h1>
 
-									// Start the typing animation loop
-									playTypingAnimation(typingTexts[0]);
+          <div class="hero-role-wrap">
+            <span class="hero-typed-role" id="typed-role">FLUTTER CROSS-PLATFORM DEVELOPER</span>
+            <span class="typing-cursor">|</span>
+          </div>
 
-								</script>
+          <p class="hero-desc">
+            I build fast, responsive and accessible mobile &amp; web experiences with clean code and a passion for pixel perfection.
+          </p>
 
-								<br>
-								<br>
-								<h2>Computer Science &amp; Engineering Student</h2>
-								<!-- <h2 class="d-flex" style="margin-bottom: 0">With over 5 years of experience</h2> -->
-								<!-- <br> -->
-								<p>
-									<a href="https://github.com/AhnafwadudArnab?tab=repositories"
-										class="btn btn-white btn-outline-white py-3 px-4">My works</a>
-								</p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
+          <div class="hero-cta-group">
+            <a href="#projects" class="btn btn-primary">
+              <span>View My Work</span>
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </a>
 
+            <!-- Resume Dropdown Menu -->
+            <div class="resume-dropdown-wrap">
+              <button type="button" class="btn btn-secondary resume-dropdown-btn" aria-haspopup="true" aria-expanded="false" id="resumeDropdownBtn">
+                <span>Download Resume</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="6 9 12 15 18 9"></polyline>
+                </svg>
+              </button>
+              <div class="resume-dropdown-menu" id="resumeDropdownMenu" role="menu">
+                <a href="https://drive.google.com/file/d/1UwzHYsYu_mIu6gsBsKz0vcCJSB0yTScB/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="resume-menu-item" role="menuitem">
+                  <div class="resume-menu-icon" style="color: #ff5722;">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect>
+                      <line x1="12" y1="18" x2="12.01" y2="18"></line>
+                    </svg>
+                  </div>
+                  <div class="resume-menu-info">
+                    <span class="resume-menu-title">Flutter Developer Resume</span>
+                    <span class="resume-menu-desc">Cross-Platform &amp; Mobile Apps</span>
+                  </div>
+                  <svg class="resume-arrow-icon" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                    <line x1="7" y1="17" x2="17" y2="7"></line>
+                    <polyline points="7 7 17 7 17 17"></polyline>
+                  </svg>
+                </a>
 
+                <a href="https://drive.google.com/file/d/1e_y_NqpVSVfbtnyIj2vu_MKl03Se_Scx/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="resume-menu-item" role="menuitem">
+                  <div class="resume-menu-icon" style="color: #64b5f6;">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                      <line x1="8" y1="21" x2="16" y2="21"></line>
+                      <line x1="12" y1="17" x2="12" y2="21"></line>
+                    </svg>
+                  </div>
+                  <div class="resume-menu-info">
+                    <span class="resume-menu-title">Junior Software Engineer Resume</span>
+                    <span class="resume-menu-desc">Full-Stack &amp; Systems Engineering</span>
+                  </div>
+                  <svg class="resume-arrow-icon" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                    <line x1="7" y1="17" x2="17" y2="7"></line>
+                    <polyline points="7 7 17 7 17 17"></polyline>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
 
-	<section class="ftco-about img ftco-section ftco-no-pb" id="about-section">
-		<div class="container">
-			<div class="row">
-				<div class="row d-flex align-items-stretch">
-					<!-- <div class="row d-flex"> -->
-					<div class="col-md-6 col-lg-7 pl-lg-5 pb-5">
-						<div class="row justify-content-start pb-3">
-							<div class="col-md-12 heading-section ftco-animate">
+          <!-- Social Links Row -->
+          <div class="hero-socials">
+            <span class="socials-label">Find Me On</span>
+            <div class="social-links">
+              <!-- GitHub -->
+              <a href="https://github.com/AhnafwadudArnab" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="GitHub Profile">
+                <svg viewBox="0 0 24 24">
+                  <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+                </svg>
+              </a>
 
-								<h1 class="big">About</h1>
-								<h2 class="mb-4">About Me</h2>
-								<p>Computer Science student and Flutter Developer with hands-on experience building cross-platform
-									mobile applications using Flutter and Dart. Experienced in integrating REST APIs and Firebase,
-									working with Node.js, PHP, MySQL, Cloud Firestore, and Supabase, and developing responsive,
-									reusable UI components.</p>
-								<ul class="about-info mt-4 px-md-0 px-2">
-									<li class="d-flex"><span>Profile:</span> <span>Flutter Developer</span></li>
-									<li class="d-flex"><span>Education:</span> <span>B.Sc. in Computer Science and Engineering</span></li>
-									<li class="d-flex"><span>Language:</span> <span>Bangla (Native), English (Intermediate)</span></li>
-									<li class="d-flex"><span>Tools:</span> <span>Git, GitHub, Android Studio, VS Code, Postman</span></li>
-									<li class="d-flex"><span>Backend:</span> <span>Node.js, PHP, MySQL, Firebase, Supabase</span></li>
-									<li class="d-flex"><span>Certifications:</span> <span>Flutter, Dart, Java, C/C++</span></li>
-									<li class="d-flex"><span>Profiles:</span> <span>HackerRank, LeetCode</span></li>
-									<li class="d-flex"><span>Interests:</span> <span>Mobile development, UI/UX, problem solving</span></li>
-								</ul>
-							</div>
-						</div>
+              <!-- LinkedIn -->
+              <a href="https://www.linkedin.com/in/ahnaf-wadud-arnab-076657245/" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="LinkedIn Profile">
+                <svg viewBox="0 0 24 24">
+                  <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                </svg>
+              </a>
 
+              <!-- Facebook -->
+              <a href="https://www.facebook.com/Ahnaf126" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="Facebook Profile">
+                <svg viewBox="0 0 24 24">
+                  <path d="M22.675 0h-21.35c-.732 0-1.325.593-1.325 1.325v21.351c0 .731.593 1.324 1.325 1.324h11.495v-9.294h-3.128v-3.622h3.128v-2.671c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12v9.293h6.116c.73 0 1.323-.593 1.323-1.325v-21.35c0-.732-.593-1.325-1.325-1.325z"/>
+                </svg>
+              </a>
 
-						<div class="counter-wrap ftco-animate d-flex mt-md-3">
-							<div class="text">
-								<p class="mb-4">
-									<span class="number" data-number="15">0</span> <span>+</span>
-														<span>&nbsp; Projects completed</span>
-								</p>
-								<p><a href="https://github.com/AhnafwadudArnab"
-										class="btn btn-primary py-3 px-3">GitHub</a></p>
-							</div>
-						</div>
-					</div>
+              <!-- Instagram -->
+              <a href="https://www.instagram.com/a_arn0b/" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="Instagram Profile">
+                <svg viewBox="0 0 24 24">
+                  <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
 
-					<div class="col-md-6 col-lg-5 d-flex">
-						<div class="img-about img d-flex align-items-stretch">
-							<div class="overlay">
-								<div class="row">
-									<div class="col-sm-6 col-md-5">
-										<div class="about-img">
-											<img src="images/black.jpg" class="img-fluid rounded-circle b-shadow-a" alt="Profile Image">
-										</div>
-									</div>
-									
-								</div>
+        <!-- Hero Right Column (Image + Angular Orange Polygon Graphic + Floating Badge) -->
+        <div class="hero-visual">
+          <!-- Stylized Orange Angular Polygon (matching Arjun Dev mockup) -->
+          <div class="hero-orange-polygon" aria-hidden="true"></div>
 
-								<div class="skill-mf">
-									<p class="title-s">Skills</p>
-									<span>C/C++</span> <span class="pull-right">75%</span>
-									<div class="progress">
-										<div class="progress-bar" role="progressbar" style="width: 75%;"
-											aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-									</div>
+          <!-- Person Image with Gradient Fade at Bottom -->
+          <div class="hero-image-wrapper">
+            <img src="images/ahnaf_hero.png" alt="Ahnaf Wadud Arnab portrait in suit" class="hero-person-img" width="370" height="520">
+          </div>
 
-									<span>Java</span> <span class="pull-right">83%</span>
-									<div class="progress">
-										<div class="progress-bar" role="progressbar" style="width: 83%"
-											aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
-									</div>
+          <!-- Floating Experience Badge on Right -->
+          <div class="hero-exp-card">
+            <span class="exp-num">2+</span>
+            <span class="exp-label">Years of<br>Experience</span>
+            <span class="exp-code-icon">&lt;/&gt;</span>
+          </div>
+        </div>
+      </div>
+    </section>
 
-									<span>Dart</span> <span class="pull-right">75%</span>
-									<div class="progress">
-										<div class="progress-bar" role="progressbar" style="width: 75%"
-											aria-valuenow="93" aria-valuemin="0" aria-valuemax="100"></div>
-									</div>
-									<span>Flutter</span> <span class="pull-right">88%</span>
-									<div class="progress">
-										<div class="progress-bar" role="progressbar" style="width: 88%"
-											aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
-									</div>
-									<span>Nodejs</span> <span class="pull-right">50%</span>
-									<div class="progress">
-										<div class="progress-bar" role="progressbar" style="width: 50%"
-											aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
-									</div>
-									<span>React Native</span> <span class="pull-right">40-50%</span>
-									<div class="progress">
-										<div class="progress-bar" role="progressbar" style="width: 45%"
-											aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
-									</div>
-									<span>MySQL</span> <span class="pull-right">60%</span>
-									<div class="progress">
-										<div class="progress-bar" role="progressbar" style="width: 60%"
-											aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-									</div>
+    <!-- ==========================================================================
+         About Me Section
+         ========================================================================== -->
+    <section id="about" class="section about-section">
+      <div class="container about-grid">
+        <!-- Left Column: Story, Skills & Signature -->
+        <div class="about-text-col">
+          <span class="section-label">About Me</span>
+          <h2 class="about-headline">
+            <strong>I'm a Computer Science &amp; Engineering Student and Flutter Developer</strong> building scalable applications and modern digital experiences.
+          </h2>
+          <p class="about-bio">
+            Passionate about developing intuitive, responsive, and user-focused applications. I specialize in cross-platform mobile development using Flutter and Dart, with experience in backend integration, REST APIs, and cloud-based technologies. Currently expanding my expertise in full-stack web development while focusing on clean architecture, efficient problem-solving, and building practical solutions.
+          </p>
 
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
+          <!-- Skills & Tools -->
+          <div class="about-skills-card">
+            <h3 class="about-skills-title">
+              <span class="about-emoji">💼</span> Skills &amp; Tools
+            </h3>
+            <ul class="about-skills-list">
+              <li>
+                <strong>Frontend / Mobile:</strong> Flutter, Dart, Responsive UI, Reusable Components
+              </li>
+              <li>
+                <strong>Backend / Database:</strong> Node.js, PHP, REST APIs, MySQL, Firebase, Supabase
+              </li>
+              <li>
+                <strong>Development Practices:</strong> State Management, API Integration, Clean Code, UI/UX
+              </li>
+            </ul>
+          </div>
 
+          <div class="about-signature-wrap">
+            <span class="about-signature">Ahnaf Wadud</span>
+          </div>
+        </div>
 
+        <!-- Right Column: 6 Info Cards -->
+        <div class="about-info-grid">
+          <!-- 1. Name -->
+          <div class="info-card">
+            <div class="info-card-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                <circle cx="12" cy="7" r="4"></circle>
+              </svg>
+            </div>
+            <div class="info-card-text">
+              <span class="info-card-label">Name</span>
+              <span class="info-card-value">Ahnaf Wadud Arnab</span>
+            </div>
+          </div>
 
+          <!-- 2. Experience -->
+          <div class="info-card">
+            <div class="info-card-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                <line x1="16" y1="2" x2="16" y2="6"></line>
+                <line x1="8" y1="2" x2="8" y2="6"></line>
+                <line x1="3" y1="10" x2="21" y2="10"></line>
+              </svg>
+            </div>
+            <div class="info-card-text">
+              <span class="info-card-label">Experience</span>
+              <span class="info-card-value">2+ Years</span>
+            </div>
+          </div>
 
-	<section class="ftco-section ftco-no-pb" id="resume-section">
-		<div class="container">
-			<div class="row justify-content-center pb-5">
-				<div class="col-md-10 heading-section text-center ftco-animate">
-					<h1 class="big big-2">Resume</h1>
-					<h2 class="mb-4">Resume</h2>
-					<p>Building cross-platform mobile applications with Flutter and Dart, integrating APIs and backend
-						services to create responsive, user-driven experiences.</p>
-				</div>
-			</div>
+          <!-- 3. Email -->
+          <div class="info-card">
+            <div class="info-card-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                <polyline points="22,6 12,13 2,6"></polyline>
+              </svg>
+            </div>
+            <div class="info-card-text">
+              <span class="info-card-label">Email</span>
+              <a href="mailto:ahnafwadudarnob@gmail.com" class="info-card-value" title="ahnafwadudarnob@gmail.com">ahnafwadudarnob@gmail.com</a>
+            </div>
+          </div>
 
-			<div class="row">
-				<h1 class="big-4">Experience</h1>
-				<div class="underline"></div>
-			</div>
-			<br>
+          <!-- 4. Location -->
+          <div class="info-card">
+            <div class="info-card-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                <circle cx="12" cy="10" r="3"></circle>
+              </svg>
+            </div>
+            <div class="info-card-text">
+              <span class="info-card-label">Location</span>
+              <span class="info-card-value">Dhaka, Bangladesh</span>
+            </div>
+          </div>
 
-			<div class="row">
-				<div class="col-md-6">
-					<div class="resume-wrap ftco-animate">
-							<span class="date">June(2024) - Present</span>
-						<h2>Flutter Developer</h2>
-							<span class="position">Independent &amp; Freelance</span>
-							<p class="mt-4">Developed cross-platform mobile applications and interfaces for railway booking, food delivery, e-commerce, and utility applications.
-						<ul>
-								<li>Integrated REST APIs and Firebase services for authentication, data retrieval, JSON handling, and application interactions.</li>
-								<li>Built responsive layouts and reusable UI components with validation feedback and loading, empty, and error states.</li>
-								<li>Structured Flutter codebases with Provider-based state management and MVC architecture to separate UI concerns from application logic.</li>
-						</ul>
-						</p>
-					</div>
-				</div>
+          <!-- 5. Availability -->
+          <div class="info-card">
+            <div class="info-card-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"></circle>
+                <polyline points="12 6 12 12 16 14"></polyline>
+              </svg>
+            </div>
+            <div class="info-card-text">
+              <span class="info-card-label">Availability</span>
+              <span class="info-card-value">Open to Work</span>
+            </div>
+          </div>
 
-				<div class="col-md-6">
-					<div class="resume-wrap ftco-animate">
-						<span class="date">2023 - Present</span>
-						<h2>Data Enthusiast &amp; Problem Solver</h2>
-						<span class="position">Independent Research &amp; Projects</span>
-						<p class="mt-4">Passionate about using data to uncover business insights and drive strategic decisions.</p>
-						<ul>
-							<li>Conducted data analysis on customer trends for Foodash, identifying key user behaviors to improve engagement.</li>
-							<li>Explored machine learning techniques for demand forecasting and recommendation systems.</li>
-							<li>Applied A/B testing principles to optimize UI/UX decisions in app development.</li>
-						</ul>
-					</div>
-				</div>
-			</div>
+          <!-- 6. Freelance -->
+          <div class="info-card">
+            <div class="info-card-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="22" y1="2" x2="11" y2="13"></line>
+                <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+              </svg>
+            </div>
+            <div class="info-card-text">
+              <span class="info-card-label">Freelance</span>
+              <span class="info-card-value">Available</span>
+            </div>
+          </div>
 
-			<br>
-			<br>
+          <!-- 7. Education -->
+          <div class="info-card">
+            <div class="info-card-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+              </svg>
+            </div>
+            <div class="info-card-text">
+              <span class="info-card-label">Education</span>
+              <span class="info-card-value">UIU (B.Sc. in CSE)</span>
+            </div>
+          </div>
 
-			<div class="row">
-				<h1 class="big-4">Education</h1>
-				<div class="underline"></div>
-			</div>
-			<br>
+          <!-- 8. Specialization -->
+          <div class="info-card">
+            <div class="info-card-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+                <polyline points="2 17 12 22 22 17"></polyline>
+                <polyline points="2 12 12 17 22 12"></polyline>
+              </svg>
+            </div>
+            <div class="info-card-text">
+              <span class="info-card-label">Specialization</span>
+              <span class="info-card-value">Flutter &amp; Full-Stack (Aspiring)</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-			<div class="row">
-				<div class="col-md-6">
-					<div class="resume-wrap ftco-animate">
-										<span class="date">2022 - Present</span>
-										<h2>B.Sc. in Computer Science and Engineering</h2>
-										<span class="position">United International University (UIU), Dhaka</span>
-						<p class="mt-4"></p>
-					</div>
-				</div>
+    <!-- ==========================================================================
+         Experience & Education (Resume Section)
+         ========================================================================== -->
+    <section id="experience" class="section timeline-section">
+      <div class="container">
+        <div class="section-header-center">
+          <span class="section-label">My Journey</span>
+          <h2 class="section-title">Experience &amp; Education</h2>
+          <p class="section-subtitle">A timeline of my professional growth, engineering projects, and academic background.</p>
+        </div>
 
-				<div class="col-md-6">
-					<div class="resume-wrap ftco-animate">
-										<span class="date">2020 - 2021</span>
-										<h2>Higher Secondary Certificate (Science)</h2>
-										<span class="position">Amirjan College, Dhaka</span>
-						<p class="mt-4">Group: Science</p>
-					</div>
-				</div>
-				<div class="col-md-6">
-					<div class="resume-wrap ftco-animate">
-										<span class="date">2019</span>
-										<h2>Secondary School Certificate (Science)</h2>
-										<span class="position">Annada Government High School, Brahmanbaria</span>
-						<p class="mt-4">Group: Science</p>
-					</div>
-				</div>
-			</div>
+        <div class="timeline-two-cols">
+          <!-- Experience Column -->
+          <div>
+            <h3 class="timeline-col-title">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+              </svg>
+              <span>Work Experience</span>
+            </h3>
 
-			<div class="row justify-content-center mt-5">
-				<div class="col-md-6 text-center ftco-animate">
-					<p><a href="https://raw.githubusercontent.com/AhnafwadudArnab/AhnafWadudArnab.github.io/main/images/Ahnaf%20Wadud%20Resume.pdf" download class="btn btn-primary py-4 px-5">Download CV</a></p>
-				</div>
-			</div>
-		</div>
-	</section>
+            <div class="timeline-items-list">
+              <div class="timeline-card">
+                <span class="timeline-date">June 2024 - Present</span>
+                <h4 class="timeline-role">Flutter Developer</h4>
+                <span class="timeline-org">Independent &amp; Freelance</span>
+                <div class="timeline-desc">
+                  Developed cross-platform mobile applications and interfaces for railway booking, food delivery, e-commerce, and utility applications.
+                  <ul>
+                    <li>Integrated REST APIs and Firebase services for authentication, data retrieval, JSON handling, and application interactions.</li>
+                    <li>Built responsive layouts and reusable UI components with validation feedback and loading, empty, and error states.</li>
+                    <li>Structured Flutter codebases with Provider-based state management and MVC architecture to separate UI concerns from application logic.</li>
+                  </ul>
+                </div>
+              </div>
 
+              <div class="timeline-card">
+                <span class="timeline-date">2023 – Present</span>
+                <h4 class="timeline-role">Developer &amp; Tech Enthusiast</h4>
+                <span class="timeline-org">Independent Projects &amp; Research</span>
+                <div class="timeline-desc">
+                  Driven by curiosity and a passion for building impactful digital experiences through software development, data exploration, and emerging technologies.
+                  <ul>
+                    <li><strong>Data Exploration:</strong> Analyzed customer behavior and trends for Foodash to uncover insights and identify opportunities for better user engagement.</li>
+                    <li><strong>Machine Learning:</strong> Explored predictive modeling, recommendation systems, and computer vision using Python and OpenCV.</li>
+                    <li><strong>Product Optimization:</strong> Applied analytical thinking and A/B testing concepts to improve application usability and user experience.</li>
+                    <li><strong>Continuous Innovation:</strong> Experimented with modern technologies and practical solutions through independent projects and technical research.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
 
+          <!-- Education Column -->
+          <div>
+            <h3 class="timeline-col-title">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+              </svg>
+              <span>Education</span>
+            </h3>
 
-	<section class="ftco-section" id="project-section">
-		<div class="container">
-			<div class="row justify-content-center mb-5 pb-5">
-				<div class="col-md-7 heading-section text-center ftco-animate">
-					<h1 class="big big-2">Projects</h1>
-					<h2 class="mb-4">Projects</h2>
-					<p>Selected projects built with Flutter, Dart, REST APIs, Firebase, Node.js, PHP, and MySQL.</p>
-				</div>
-			</div>
-			<div class="row d-flex">
-				<div class="col-md-4 d-flex ftco-animate">
-					<div class="blog-entry justify-content-end">
-						<a href="https://github.com/AhnafwadudArnab/Foodash_--_Food_Delivery_App" class="block-20 zoom-effect"
-							style="background-image: url('images/Project%20thumb/foodash.png');">
-						</a>
-						<div class="text mt-3 float-right d-block">
+            <div class="timeline-items-list">
+              <div class="timeline-card">
+                <span class="timeline-date">2022 - Present</span>
+                <h4 class="timeline-role">B.Sc. in Computer Science &amp; Engineering</h4>
+                <span class="timeline-org">United International University (UIU), Dhaka</span>
+                <div class="timeline-edu-meta">
+                  <span class="edu-pill"><strong>Department:</strong> Computer Science &amp; Engineering</span>
+                  <span class="edu-pill"><strong>Year:</strong> 2022 - Present</span>
+                </div>
+              </div>
 
-							<h3 class="heading"><a
-									href="https://github.com/AhnafwadudArnab/Foodash_--_Food_Delivery_App">Foodash Delivery
-									App</a></h3>
-							<p>Flutter food and product discovery, cart management, checkout, and order tracking with Firebase,
-								REST APIs, and reusable UI components.</p>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-4 d-flex ftco-animate">
-					<div class="blog-entry justify-content-end">
-						<a href="https://github.com/AhnafwadudArnab/Amar-Rail-sheba" class="block-20 zoom-effect"
-							style="background-image: url('images/erail.jpg');">
-						</a>
-						<div class="text mt-3 float-right d-block">
+              <div class="timeline-card">
+                <span class="timeline-date">2020 - 2021</span>
+                <h4 class="timeline-role">Higher Secondary Certificate (HSC)</h4>
+                <span class="timeline-org">Amirjan College, Dhaka</span>
+                <div class="timeline-edu-meta">
+                  <span class="edu-pill"><strong>Group:</strong> Science</span>
+                  <span class="edu-pill"><strong>Year:</strong> 2020 - 2021</span>
+                </div>
+              </div>
 
-							<h3 class="heading"><a href="https://github.com/AhnafwadudArnab/Amar-Rail-sheba">Railway
-									System App</a></h3>
-							<p>Flutter railway management system with train search, route and schedule browsing, seat selection,
-								and reservation workflows using Node.js REST APIs and MySQL.</p>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-4 d-flex ftco-animate">
-					<div class="blog-entry justify-content-end">
-						<a href="https://github.com/AhnafwadudArnab/Electrozonebd" class="block-20 zoom-effect"
-							style="background-image: url('images/Project%20thumb/electrozone.png');">
-						</a>
-						<div class="text mt-3 float-right d-block">
-							<h3 class="heading"><a href="https://github.com/AhnafwadudArnab/Electrozonebd">ElectroZoneBD</a></h3>
-							<p>Online electronics shop with product browsing, cart management, and order placement using Flutter, PHP, MySQL, and REST APIs.</p>
-						</div>
-					</div>
-				</div>
-			</div>
-			<br>
-			<div class="row d-flex justify-content-center">
-				<div class="col-md-4 d-flex ftco-animate">
-					<div class="blog-entry justify-content-end">
-						<a href="https://github.com/AhnafwadudArnab/FACE_DETECTION_APP" class="block-20 zoom-effect"
-							style="background-image: url('images/Project%20thumb/facedetection.png');">
-						</a>
-						<div class="text mt-3 float-right d-block">
+              <div class="timeline-card">
+                <span class="timeline-date">2019</span>
+                <h4 class="timeline-role">Secondary School Certificate (SSC)</h4>
+                <span class="timeline-org">Annada Government High School, Brahmanbaria</span>
+                <div class="timeline-edu-meta">
+                  <span class="edu-pill"><strong>Group:</strong> Science</span>
+                  <span class="edu-pill"><strong>Year:</strong> 2019</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
 
-							<h3 class="heading"><a href="https://github.com/AhnafwadudArnab/FACE_DETECTION_APP">Face Detection App</a></h3>
-							<p>Camera and image-capture interfaces with prediction-result screens connected to Python and OpenCV REST API workflows.</p>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-4 d-flex ftco-animate">
-					<div class="blog-entry">
-						<a href="https://github.com/AhnafwadudArnab/Chat-Application" class="block-20 zoom-effect"
-							style="background-image: url('images/Project%20thumb/chatapp.png');">
-						</a>
-						<div class="text mt-3 float-right d-block">
+        <!-- Research Publication Showcase (Placed after Experience & Education) -->
+        <div class="research-publication-box">
+          <div class="research-badge-row">
+            <span class="research-badge">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+                <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+              </svg>
+              Research Paper
+            </span>
+            <span class="timeline-date" style="margin-bottom: 0;">2024 - 2025</span>
+          </div>
+          <h4 class="research-title">
+            &ldquo;A Deep Learning Approach for Real-Time Face Detection and Feature Extraction on Edge Mobile Devices&rdquo;
+          </h4>
+          <span class="timeline-org">Undergraduate Research &bull; Department of Computer Science &amp; Engineering, UIU</span>
+        </div>
 
-							<h3 class="heading"><a href="https://github.com/AhnafwadudArnab/Chat-Application">Chat Application</a></h3>
-							<p>A real-time chat application for sending and receiving messages through a smooth communication experience.</p>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-4 d-flex ftco-animate">
-					<div class="blog-entry">
-						<a href="https://github.com/AhnafwadudArnab/Hangman-The-game" class="block-20 zoom-effect"
-							style="background-image: url('images/hangman.png');">
-						</a>
-						<div class="text mt-3 float-right d-block">
-							<h3 class="heading"><a href="https://github.com/AhnafwadudArnab/Hangman-The-game">Hangman - The Game</a></h3>
-							<p>A classic word-guessing game where players try to reveal a hidden word one letter at a time.</p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
+        <!-- Coding Profiles & Problem Solving -->
+        <div class="coding-profiles-box">
+          <div class="coding-profiles-header">
+            <div class="coding-profiles-title">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="16 18 22 12 16 6"></polyline>
+                <polyline points="8 6 2 12 8 18"></polyline>
+              </svg>
+              <span>Coding &amp; Problem Solving Profiles</span>
+            </div>
+          </div>
 
-	<section class="ftco-section ftco-no-pt ftco-no-pb ftco-counter img" id="section-counter">
-		<div class="container">
-			<div class="row d-md-flex align-items-center">
-				<div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
-					<div class="block-18">
-						<div class="text">
-											<strong class="number" data-number="6">0</strong>
-							<span>Achievements</span>
-						</div>
-					</div>
-				</div>
-				<div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
-					<div class="block-18">
-						<div class="text">
-											<strong class="number" data-number="15">0</strong>
-							<span>Projects</span>
-						</div>
-					</div>
-				</div>
+          <div class="coding-profiles-grid">
+            <!-- GitHub Profile -->
+            <a href="https://github.com/AhnafwadudArnab" target="_blank" rel="noopener noreferrer" class="coding-profile-card">
+              <div class="coding-profile-icon" style="color: #fff;">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+                </svg>
+              </div>
+              <div class="coding-profile-info">
+                <span class="coding-profile-name">GitHub</span>
+                <span class="coding-profile-desc">@AhnafwadudArnab &bull; 15+ Repos</span>
+              </div>
+            </a>
 
-				<!-- <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
-					<div class="block-18">
-						<div class="text">
-							<strong class="number" data-number="500">0</strong>
-							<span>Cups of coffee</span>
-						</div>
-					</div>
-				</div> -->
-			</div>
-		</div>
+            <!-- LeetCode Profile -->
+            <a href="https://leetcode.com/u/OTjQKVxs6f" target="_blank" rel="noopener noreferrer" class="coding-profile-card">
+              <div class="coding-profile-icon" style="color: #FFA116;">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M13.483 0a1.374 1.374 0 0 0-.961.438L7.116 6.226l-3.854 4.126a5.266 5.266 0 0 0-1.209 2.104 5.35 5.35 0 0 0-.125.513 5.527 5.527 0 0 0 .062 2.362 5.83 5.83 0 0 0 .349 1.017 5.938 5.938 0 0 0 1.271 1.818l4.277 4.193.039.038c2.248 2.165 5.852 2.133 8.063-.074l2.396-2.392c.54-.54.54-1.414.003-1.955a1.378 1.378 0 0 0-1.951-.003l-2.396 2.392a3.021 3.021 0 0 1-4.205.038l-.02-.019-4.276-4.193c-.652-.64-.972-1.469-.948-2.263a2.68 2.68 0 0 1 .066-.523 2.545 2.545 0 0 1 .619-1.164L9.13 8.114c1.058-1.134 3.204-1.27 4.43-.278l3.501 2.831c.593.48 1.461.387 1.94-.207a1.384 1.384 0 0 0-.207-1.943l-3.5-2.831c-.8-.647-1.766-1.045-2.774-1.202l2.015-2.158A1.384 1.384 0 0 0 13.483 0zm-2.866 12.815a1.38 1.38 0 0 0-1.38 1.382 1.38 1.38 0 0 0 1.38 1.382H20.79a1.38 1.38 0 0 0 1.38-1.382 1.38 1.38 0 0 0-1.38-1.382z"/>
+                </svg>
+              </div>
+              <div class="coding-profile-info">
+                <span class="coding-profile-name">LeetCode</span>
+                <span class="coding-profile-desc">Algorithms &amp; Problem Solving</span>
+              </div>
+            </a>
 
-		<div class="ftco-section ftco-hireme img margin-top" style="background-image: url(images/bg_1.jpg)">
-			<!-- <div class="container"> -->
-			<div class="row justify-content-center">
-				<div class="col-md-7 ftco-animate text-center">
-					<h2>More projects on<span> Github </span> </h2>
-					<div class="heading">
-						<h4>I love building Flutter apps that uncover hidden data stories and transforming those insights into intuitive, user-friendly experiences.</h4>
-						<br>
-						<p><a href="https://github.com/AhnafwadudArnab" class="btn btn-primary py-3 px-5">GitHub</a></p>
-					</div>
-				</div>
-			</div>
-			<!-- </div> -->
-		</div>
-	</section>
+            <!-- HackerRank Profile -->
+            <a href="https://www.hackerrank.com/profile/ahanafwadudarnob" target="_blank" rel="noopener noreferrer" class="coding-profile-card">
+              <div class="coding-profile-icon" style="color: #00EA64;">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm-1.875 16.5H8.25V7.5h1.875v9zm5.625 0h-1.875V7.5h1.875v9z"/>
+                </svg>
+              </div>
+              <div class="coding-profile-info">
+                <span class="coding-profile-name">HackerRank</span>
+                <span class="coding-profile-desc">Certified Java &bull; C/C++</span>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
 
+    <!-- ==========================================================================
+         Tech Stack Section
+         ========================================================================== -->
+    <section id="skills" class="section tech-stack-section">
+      <div class="container">
+        <div class="section-header-center">
+          <span class="section-label">Tech Stack</span>
+          <h2 class="section-title">Technologies &amp; Tools</h2>
+          <p class="section-subtitle">A curated collection of languages, frameworks, and tools I use to bring ideas to life.</p>
+        </div>
 
+        <!-- Tech Tiles Row/Grid with Authentic Logos -->
+        <div class="tech-grid">
+          <!-- Flutter -->
+          <div class="tech-tile">
+            <div class="tech-icon-wrap">
+              <svg viewBox="0 0 24 24" fill="#02569B">
+                <path d="M14.314 0L2.3 12 6 15.7 21.684 0h-7.37zM14.314 11.23l-5.63 5.63 5.63 5.63h7.37l-5.63-5.63 5.63-5.63h-7.37z" fill="#02569B"/>
+                <path d="M8.685 16.86L14.314 22.5h7.37l-5.63-5.64-7.37.001z" fill="#0175C2"/>
+                <path d="M14.314 11.23l-2.82 2.81 2.82 2.82 5.63-5.63h-5.63z" fill="#29B6F6"/>
+              </svg>
+            </div>
+            <span>Flutter</span>
+          </div>
 
-	<section class="ftco-section contact-section ftco-no-pb" id="contact-section">
-		<div class="container">
-			<div class="row justify-content-center mb-5 pb-3">
-				<div class="col-md-7 heading-section text-center ftco-animate">
-					<h1 class="big big-2">Contact</h1>
-					<h2 class="mb-4">Contact Me</h2>
-					<p>Below are the details to reach out to me!</p>
-				</div>
-			</div>
+          <!-- Dart -->
+          <div class="tech-tile">
+            <div class="tech-icon-wrap">
+              <svg viewBox="0 0 24 24">
+                <path d="M4.105 4.105L0 12.001l4.105 7.894h7.893L24 7.896 16.105 0H7.896L4.105 4.105z" fill="#0175C2"/>
+                <path d="M12.001 4.105l-4.105 4.105 4.105 4.105h7.894L24 7.896 16.105 0h-4.104v4.105z" fill="#00B4AB"/>
+              </svg>
+            </div>
+            <span>Dart</span>
+          </div>
 
-			<div class="row d-flex contact-info mb-5">
-				<div class="col-md-6 col-lg-3 d-flex ftco-animate">
-					<div class="align-self-stretch box p-4 text-center">
-						<div class="icon d-flex align-items-center justify-content-center">
-							<span class="icon-map-signs"></span>
-						</div>
-						<h3 class="mb-4">Address</h3>
-						<p>Dhaka, Bangladesh</p>
-					</div>
-				</div>
-				<div class="col-md-6 col-lg-3 d-flex ftco-animate">
-					<div class="align-self-stretch box p-4 text-center">
-						<div class="icon d-flex align-items-center justify-content-center">
-							<span class="icon-phone2"></span>
-						</div>
-						<h3 class="mb-4">Contact Number</h3>
-										<p><a href="tel:+8801996242974">+8801996242974</a></p>
-					</div>
-				</div>
-				<div class="col-md-6 col-lg-3 d-flex ftco-animate">
-					<div class="align-self-stretch box p-4 text-center">
-						<div class="icon d-flex align-items-center justify-content-center">
-							<span class="icon-paper-plane"></span>
-						</div>
-						<h3 class="mb-4">Email Address</h3>
-										<p><a href="mailto:ahanafwadudarnob@gmail.com">ahanafwadudarnob@gmail.com</a></p>
-					</div>
-				</div>
-				<div class="col-md-6 col-lg-3 d-flex ftco-animate">
-					<div class="align-self-stretch box p-4 text-center">
-						<div class="icon d-flex align-items-center justify-content-center">
-							<span class="icon-globe"></span>
-						</div>
-						<h3 class="mb-4">Download Resume</h3>
-						<p><a href="https://raw.githubusercontent.com/AhnafwadudArnab/AhnafWadudArnab.github.io/main/images/Ahnaf%20Wadud%20Resume.pdf" download>Download PDF</a></p>
-					</div>
-				</div>
-			</div>
+          <!-- Java -->
+          <div class="tech-tile">
+            <div class="tech-icon-wrap">
+              <svg viewBox="0 0 24 24" fill="#E76F00">
+                <path d="M8.85 16.84c0 .03.04.05.08.06 1.48.51 3.09.52 4.6.01.07-.02.1-.06.07-.11-.08-.14-.23-.33-.35-.47-.04-.04-.09-.04-.13-.02-1.28.45-2.67.43-3.95-.01-.06-.02-.12 0-.14.05-.05.15-.12.33-.18.49zm-.52 2.14c0 .03.04.05.07.06 1.83.66 3.86.68 5.73.04.08-.03.11-.07.08-.13-.09-.16-.25-.37-.37-.52-.03-.04-.09-.04-.13-.02-1.57.56-3.32.53-4.91-.01-.05-.02-.11 0-.13.04-.08.16-.23.37-.34.54zM20.2 18.2c-1.39-.33-2.69-.64-3.83-.87 1.25-1.4 2.03-3.08 2.03-4.75 0-3.35-3.03-5.23-7.2-5.23-.42 0-.85.02-1.28.06 0 0 .54-.77 1.5-1.46 1.41-1.02 3.65-1.57 6.07-1.13.23.04.42-.14.38-.37-.31-1.63-2.58-2.44-5.32-2.44-2.42 0-4.66.97-5.88 2.53C5.51 6.09 5 7.82 5 9.77c0 3.81 2.31 6.44 5.92 7.15-2.22.46-4.5.39-6.62-.25-.21-.06-.41.09-.38.31.29 1.95 2.87 3.02 5.95 3.02 3.32 0 6.64-1.12 9.5-2.29.35-.14.71-.29 1.07-.44.25-.1.17-.48-.24-.37z"/>
+              </svg>
+            </div>
+            <span>Java</span>
+          </div>
 
-			<!-- Contact Form -->
-			<div class="row justify-content-center mb-5">
-				<div class="col-md-8 ftco-animate">
-					<div class="premium-contact-form">
-						<div class="form-header text-center mb-4">
-							<span class="form-tag">Get In Touch</span>
-							<h3 class="mt-2">Send Me a Message</h3>
-						</div>
-						<form action="https://formspree.io/f/meaqjdek" method="POST" id="contactForm">
-							<div class="row">
-								<div class="col-md-6">
-									<div class="premium-form-group">
-										<label>Your Name</label>
-										<div class="input-wrapper">
-											<span class="input-icon"><i class="icon-user"></i></span>
-											<input type="text" name="name" placeholder="Ahnaf Wadud" required>
-										</div>
-									</div>
-								</div>
-								<div class="col-md-6">
-									<div class="premium-form-group">
-										<label>Your Email</label>
-										<div class="input-wrapper">
-											<span class="input-icon"><i class="icon-paper-plane"></i></span>
-											<input type="email" name="email" placeholder="example@gmail.com" required>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="premium-form-group">
-								<label>Subject</label>
-								<div class="input-wrapper">
-									<span class="input-icon"><i class="icon-tag"></i></span>
-									<input type="text" name="subject" placeholder="What's this about?">
-								</div>
-							</div>
-							<div class="premium-form-group">
-								<label>Message</label>
-								<textarea name="message" rows="6" placeholder="Write your message here..." required></textarea>
-							</div>
-							<div class="text-center mt-4">
-								<button type="submit" class="premium-submit-btn">
-									<span>Send Message</span>
-									<i class="icon-paper-plane ml-2"></i>
-								</button>
-							</div>
-							<p id="form-status" class="text-center mt-3"></p>
-						</form>
-					</div>
-					<script>
-						var form = document.getElementById("contactForm");
-						form.addEventListener("submit", function(e) {
-							e.preventDefault();
-							var status = document.getElementById("form-status");
-							var btn = form.querySelector(".premium-submit-btn span");
-							btn.textContent = "Sending...";
-							var data = new FormData(form);
-							fetch(form.action, {
-								method: form.method,
-								body: data,
-								headers: { 'Accept': 'application/json' }
-							}).then(function(response) {
-								if (response.ok) {
-									status.innerHTML = "✅ Message sent! I'll get back to you soon.";
-									status.style.color = "#c49a00";
-									form.reset();
-									btn.textContent = "Send Message";
-								} else {
-									status.innerHTML = "❌ Something went wrong. Please try again.";
-									status.style.color = "#ff6b6b";
-									btn.textContent = "Send Message";
-								}
-							}).catch(function() {
-								status.innerHTML = "❌ Something went wrong. Please try again.";
-								status.style.color = "#ff6b6b";
-								btn.textContent = "Send Message";
-							});
-						});
-					</script>
-				</div>
-			</div>
+          <!-- HTML5 -->
+          <div class="tech-tile">
+            <div class="tech-icon-wrap">
+              <svg viewBox="0 0 24 24" fill="#E34F26">
+                <path d="M1.5 0h21l-1.9 21.2L12 24l-8.6-2.8L1.5 0zm17.6 4.9H4.9l.4 4.5h11.4l-.4 4.6-3.9 1.1-3.9-1.1-.3-2.6H5.8l.4 5.1 5.8 1.6 5.8-1.6 1.3-11.6z"/>
+              </svg>
+            </div>
+            <span>HTML5</span>
+          </div>
 
-			<div class="container pb-3">
-					<ul class="ftco-footer-social list-unstyled d-flex justify-content-center align-items-center mb-0">
-						<li class="ftco-animate normal-txt">Find me on </li>
-						<li class="ftco-animate"><a href="https://www.linkedin.com/in/ahnaf-wadud-arnab/"><span
-									class="icon-linkedin"></span></a></li>
-						<li class="ftco-animate"><a href="https://www.facebook.com/Ahnaf126"><span
-									class="icon-facebook"></span></a></li>
-						<li class="ftco-animate"><a href="https://www.instagram.com/a_arn0b/"><span
-									class="icon-instagram"></span></a></li>
-					</ul>
-				</div>
-			</div>
-	</section>
+          <!-- CSS3 -->
+          <div class="tech-tile">
+            <div class="tech-icon-wrap">
+              <svg viewBox="0 0 24 24" fill="#1572B6">
+                <path d="M1.5 0h21l-1.9 21.2L12 24l-8.6-2.8L1.5 0zm17.6 4.9H4.9l.4 4.5h11.4l-.4 4.6-3.9 1.1-3.9-1.1-.3-2.6H5.8l.4 5.1 5.8 1.6 5.8-1.6 1.3-11.6z"/>
+              </svg>
+            </div>
+            <span>CSS3</span>
+          </div>
 
+          <!-- JavaScript -->
+          <div class="tech-tile">
+            <div class="tech-icon-wrap">
+              <svg viewBox="0 0 24 24">
+                <rect width="24" height="24" fill="#F7DF1E" rx="3"/>
+                <path d="M6.5 18.5l2-.5c.3.6.6 1.1 1.2 1.1.7 0 1.1-.4 1.1-1.3v-6.3h2.3v6.3c0 2.1-1.2 3.1-3.2 3.1-1.7 0-2.8-.9-3.4-2.4zm8.3 0l2-.5c.4.8 1 1.2 1.8 1.2.8 0 1.3-.4 1.3-1 0-.7-.5-1-1.7-1.4l-.7-.3c-2-.7-3.3-1.6-3.3-3.6 0-1.8 1.4-3.2 3.5-3.2 1.6 0 2.7.6 3.4 1.9l-1.8.7c-.4-.7-.9-1-1.6-1-.7 0-1.2.4-1.2.9 0 .6.4.9 1.5 1.3l.7.3c2.3.8 3.5 1.7 3.5 3.8 0 2.2-1.7 3.3-3.8 3.3-2.1 0-3.5-1.1-4.1-2.4z" fill="#000"/>
+              </svg>
+            </div>
+            <span>JavaScript</span>
+          </div>
 
+          <!-- Firebase -->
+          <div class="tech-tile">
+            <div class="tech-icon-wrap">
+              <svg viewBox="0 0 24 24">
+                <path d="M3.89 15.67L6.25.75A.77.77 0 0 1 7.6.43l3.24 6.13-6.95 9.11z" fill="#FFA000"/>
+                <path d="M12.92 8.78l2.12-4.11a.77.77 0 0 1 1.39.06l3.69 10.94-7.2-6.89z" fill="#F57C00"/>
+                <path d="M3.89 15.67L2.4 17.15a.77.77 0 0 0 .34 1.3L11.5 23.3a1.53 1.53 0 0 0 .97 0l8.76-4.85a.77.77 0 0 0 .34-1.3l-1.49-1.48L12.92 8.78 3.89 15.67z" fill="#FFCA28"/>
+              </svg>
+            </div>
+            <span>Firebase</span>
+          </div>
 
+          <!-- Node.js -->
+          <div class="tech-tile">
+            <div class="tech-icon-wrap">
+              <svg viewBox="0 0 24 24" fill="#339933">
+                <path d="M12 2l9.5 5.5v11L12 24l-9.5-5.5v-11L12 2zm0 2.3L4.5 8.7v8.6l7.5 4.4 7.5-4.4V8.7L12 4.3zm0 4.1a3.6 3.6 0 1 1 0 7.2 3.6 3.6 0 0 1 0-7.2z"/>
+              </svg>
+            </div>
+            <span>Node.js</span>
+          </div>
 
-	<footer class="ftco-footer ftco-section py-3">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-12 text-center">
-					<p class="mb-0">Copyright &copy;
-						<script>document.write(new Date().getFullYear());</script> All rights reserved.
-					</p>
-				</div>
-			</div>
-		</div>
-	</footer>
+          <!-- React.js (MERN) -->
+          <div class="tech-tile">
+            <div class="tech-icon-wrap">
+              <svg viewBox="0 0 24 24">
+                <ellipse cx="12" cy="12" rx="10" ry="4" transform="rotate(0 12 12)" fill="none" stroke="#61DAFB" stroke-width="1.5"/>
+                <ellipse cx="12" cy="12" rx="10" ry="4" transform="rotate(60 12 12)" fill="none" stroke="#61DAFB" stroke-width="1.5"/>
+                <ellipse cx="12" cy="12" rx="10" ry="4" transform="rotate(120 12 12)" fill="none" stroke="#61DAFB" stroke-width="1.5"/>
+                <circle cx="12" cy="12" r="2" fill="#61DAFB"/>
+              </svg>
+            </div>
+            <span>React.js</span>
+          </div>
 
+          <!-- MongoDB (MERN) -->
+          <div class="tech-tile">
+            <div class="tech-icon-wrap">
+              <svg viewBox="0 0 24 24" fill="#47A248">
+                <path d="M11.9 0S8.2 4.4 8.2 11.2c0 4.6 2.6 8.3 3.7 9.8.3-2.1.8-3.7 1.3-4.8 1.4-2.8 2.6-4.9 2.6-8.5C15.8 4 11.9 0 11.9 0zm.1 24s.8-1 1.2-2.3c.7-2.1.2-4.1-.2-5.4-.4 1.1-.9 2.7-1.2 4.8-.1 1.4.2 2.9.2 2.9z"/>
+              </svg>
+            </div>
+            <span>MongoDB</span>
+          </div>
 
-	<!-- loader -->
-	<div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px">
-			<circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee" />
-			<circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10"
-				stroke="#F96D00" />
-		</svg></div>
+          <!-- Express.js (MERN) -->
+          <div class="tech-tile">
+            <div class="tech-icon-wrap">
+              <svg viewBox="0 0 24 24" fill="#ffffff">
+                <path d="M24 18.5h-3.8l-4.1-6.2 3.8-5.8h3.8l-5.6 8.4 5.9 8.6zm-12.7 0H7.5l-3.8-6.2 3.5-5.8h3.8L7.4 12.3l3.9 6.2zM2.8 6.5H0v12h2.8v-12z"/>
+              </svg>
+            </div>
+            <span>Express.js</span>
+          </div>
 
+          <!-- Postman -->
+          <div class="tech-tile">
+            <div class="tech-icon-wrap">
+              <svg viewBox="0 0 24 24" fill="#FF6C37">
+                <path d="M13.6 1.4c-.6-.2-1.3-.2-1.9 0L2.8 4.7C1.7 5.1 1 6.2 1 7.3v9.4c0 1.1.7 2.2 1.8 2.6l8.9 3.3c.6.2 1.3.2 1.9 0l8.9-3.3c1.1-.4 1.8-1.5 1.8-2.6V7.3c0-1.1-.7-2.2-1.8-2.6l-8.9-3.3zM12 18.2l-6-2.2V9.3l6 2.2v6.7zm7-2.2l-6 2.2v-6.7l6-2.2v6.7z"/>
+              </svg>
+            </div>
+            <span>Postman</span>
+          </div>
 
-	<script src="js/jquery.min.js"></script>
-	<script src="js/jquery-migrate-3.0.1.min.js"></script>
-	<script src="js/popper.min.js"></script>
-	<script src="js/bootstrap.min.js"></script>
-	<script src="js/jquery.easing.1.3.js"></script>
-	<script src="js/jquery.waypoints.min.js"></script>
-	<script src="js/jquery.stellar.min.js"></script>
-	<script src="js/owl.carousel.min.js"></script>
-	<script src="js/jquery.magnific-popup.min.js"></script>
-	<script src="js/aos.js"></script>
-	<script src="js/jquery.animateNumber.min.js"></script>
-	<script src="js/scrollax.min.js"></script>
+          <!-- MySQL -->
+          <div class="tech-tile">
+            <div class="tech-icon-wrap">
+              <svg viewBox="0 0 24 24" fill="#4479A1">
+                <path d="M16.5 13.5c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zm-9 0c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zm4.5 4.5c-2.49 0-4.5-2.01-4.5-4.5s2.01-4.5 4.5-4.5 4.5 2.01 4.5 4.5-2.01 4.5-4.5 4.5zm0-16C5.48 2 0 6.48 0 12s5.48 10 12 10 12-4.48 12-10S18.52 2 12 2z"/>
+              </svg>
+            </div>
+            <span>MySQL</span>
+          </div>
 
-	<script src="js/main.js"></script>
+          <!-- Git -->
+          <div class="tech-tile">
+            <div class="tech-icon-wrap">
+              <svg viewBox="0 0 24 24" fill="#F05032">
+                <path d="M23.546 10.93L13.067.452c-.604-.603-1.582-.603-2.188 0L8.708 2.627l2.76 2.76c.645-.215 1.379-.07 1.889.441.516.515.658 1.258.438 1.9l3.085 3.085c.642-.222 1.387-.078 1.9.435.721.72.721 1.884 0 2.604-.719.719-1.881.719-2.6 0-.529-.527-.667-1.29-.413-1.933L12.79 8.941v7.277c.211.137.404.316.56.536.72.72.72 1.884 0 2.604-.719.719-1.881.719-2.6 0-.721-.72-.721-1.884 0-2.604.184-.184.39-.328.614-.428v-7.39c-.224-.1-.43-.244-.614-.428-.527-.527-.667-1.29-.413-1.933L7.545 3.791.454 10.883c-.604.604-.604 1.582 0 2.188l10.48 10.478c.604.604 1.582.604 2.186 0l10.426-10.43c.604-.603.604-1.582 0-2.189z"/>
+              </svg>
+            </div>
+            <span>Git</span>
+          </div>
 
+          <!-- GitHub -->
+          <div class="tech-tile">
+            <div class="tech-icon-wrap">
+              <svg viewBox="0 0 24 24" fill="#ffffff">
+                <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+              </svg>
+            </div>
+            <span>GitHub</span>
+          </div>
+
+          <!-- C / C++ -->
+          <div class="tech-tile">
+            <div class="tech-icon-wrap">
+              <svg viewBox="0 0 24 24" fill="#00599C">
+                <path d="M22.394 6.012l-9.45-5.457c-.584-.337-1.304-.337-1.888 0L1.606 6.012C1.022 6.35 1 7.07 1 7.744v10.914c0 .674.022 1.394.606 1.732l9.45 5.457c.584.337 1.304.337 1.888 0l9.45-5.457c.584-.338.606-1.058.606-1.732V7.744c0-.674-.022-1.394-.606-1.732zM12 18.5c-3.584 0-6.5-2.916-6.5-6.5s2.916-6.5 6.5-6.5c2.316 0 4.334 1.22 5.476 3.056l-2.584 1.488C14.248 8.878 13.196 8.3 12 8.3c-2.04 0-3.7 1.66-3.7 3.7s1.66 3.7 3.7 3.7c1.196 0 2.248-.578 2.892-1.468l2.584 1.488C16.334 17.28 14.316 18.5 12 18.5z"/>
+              </svg>
+            </div>
+            <span>C / C++</span>
+          </div>
+        </div>
+
+        <!-- Skill Proficiency Progress Bars with Exact Resume Data -->
+        <div class="skills-bars-grid">
+          <div class="skill-bar-item">
+            <div class="skill-bar-header">
+              <span class="skill-bar-name">Flutter &amp; Dart</span>
+              <span class="skill-bar-pct">88%</span>
+            </div>
+            <div class="skill-bar-track">
+              <div class="skill-bar-fill" style="width: 88%;"></div>
+            </div>
+          </div>
+
+          <div class="skill-bar-item">
+            <div class="skill-bar-header">
+              <span class="skill-bar-name">Java Development</span>
+              <span class="skill-bar-pct">83%</span>
+            </div>
+            <div class="skill-bar-track">
+              <div class="skill-bar-fill" style="width: 83%;"></div>
+            </div>
+          </div>
+
+          <div class="skill-bar-item">
+            <div class="skill-bar-header">
+              <span class="skill-bar-name">C / C++ &amp; Data Structures</span>
+              <span class="skill-bar-pct">75%</span>
+            </div>
+            <div class="skill-bar-track">
+              <div class="skill-bar-fill" style="width: 75%;"></div>
+            </div>
+          </div>
+
+          <div class="skill-bar-item">
+            <div class="skill-bar-header">
+              <span class="skill-bar-name">REST APIs &amp; Firebase</span>
+              <span class="skill-bar-pct">80%</span>
+            </div>
+            <div class="skill-bar-track">
+              <div class="skill-bar-fill" style="width: 80%;"></div>
+            </div>
+          </div>
+
+          <div class="skill-bar-item">
+            <div class="skill-bar-header">
+              <span class="skill-bar-name">MySQL &amp; Relational Databases</span>
+              <span class="skill-bar-pct">60%</span>
+            </div>
+            <div class="skill-bar-track">
+              <div class="skill-bar-fill" style="width: 60%;"></div>
+            </div>
+          </div>
+
+          <div class="skill-bar-item">
+            <div class="skill-bar-header">
+              <span class="skill-bar-name">Full-Stack (MERN) &amp; Web Services</span>
+              <span class="skill-bar-pct">75%</span>
+            </div>
+            <div class="skill-bar-track">
+              <div class="skill-bar-fill" style="width: 75%;"></div>
+            </div>
+          </div>
+
+          <div class="skill-bar-item">
+            <div class="skill-bar-header">
+              <span class="skill-bar-name">Node.js &amp; Backend Services</span>
+              <span class="skill-bar-pct">60%</span>
+            </div>
+            <div class="skill-bar-track">
+              <div class="skill-bar-fill" style="width: 60%;"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         Featured Projects / Selected Work
+         ========================================================================== -->
+    <section id="projects" class="section projects-section">
+      <div class="container">
+        <div class="projects-header-row">
+          <div>
+            <span class="section-label">Featured Projects</span>
+            <h2 class="section-title">Selected Work</h2>
+          </div>
+          <a href="https://github.com/AhnafwadudArnab?tab=repositories" target="_blank" rel="noopener noreferrer" class="view-all-link">
+            <span>View All Projects</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+              <polyline points="12 5 19 12 12 19"></polyline>
+            </svg>
+          </a>
+        </div>
+
+        <div class="projects-grid">
+          <!-- Project 1: Foodash Delivery App -->
+          <article class="project-card">
+            <div class="project-thumb-box">
+              <img src="images/Project%20thumb/foodash.png" alt="Foodash Delivery App Preview" loading="lazy">
+            </div>
+            <div class="project-info-box">
+              <div class="project-title-row">
+                <h3 class="project-title">Foodash Delivery App</h3>
+                <div class="project-action-btns">
+                  <a href="https://github.com/AhnafwadudArnab/Foodash_--_Food_Delivery_App" target="_blank" rel="noopener noreferrer" class="project-btn-icon" title="View Source Code on GitHub">
+                    <span>Code</span>
+                    <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor">
+                      <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+              <p class="project-desc">
+                Flutter food and product discovery, cart management, checkout, and order tracking with Firebase, REST APIs, and reusable UI components.
+              </p>
+              <div class="project-tags-row">
+                <span class="project-tag">Flutter</span>
+                <span class="project-tag">Firebase</span>
+                <span class="project-tag">REST API</span>
+                <span class="project-tag">Provider</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2: Amar Rail Sheba -->
+          <article class="project-card">
+            <div class="project-thumb-box">
+              <img src="images/erail.jpg" alt="Railway System App Preview" loading="lazy">
+            </div>
+            <div class="project-info-box">
+              <div class="project-title-row">
+                <h3 class="project-title">Amar Rail Sheba</h3>
+                <div class="project-action-btns">
+                  <a href="https://amar-rail-sheba.vercel.app" target="_blank" rel="noopener noreferrer" class="project-btn-icon btn-live" title="View Live Demo">
+                    <span>Live</span>
+                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                      <line x1="7" y1="17" x2="17" y2="7"></line>
+                      <polyline points="7 7 17 7 17 17"></polyline>
+                    </svg>
+                  </a>
+                  <a href="https://github.com/AhnafwadudArnab/Amar-Rail-sheba" target="_blank" rel="noopener noreferrer" class="project-btn-icon" title="View Source Code on GitHub">
+                    <span>Code</span>
+                    <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor">
+                      <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+              <p class="project-desc">
+                Railway management system with train search, route and schedule browsing, seat selection, and reservation workflows using Node.js REST APIs and MySQL.
+              </p>
+              <div class="project-tags-row">
+                <span class="project-tag">Flutter</span>
+                <span class="project-tag">Node.js</span>
+                <span class="project-tag">MySQL</span>
+                <span class="project-tag">REST API</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 3: ElectroZoneBD -->
+          <article class="project-card">
+            <div class="project-thumb-box">
+              <img src="images/Project%20thumb/electrozone.png" alt="ElectroZoneBD Preview" loading="lazy">
+            </div>
+            <div class="project-info-box">
+              <div class="project-title-row">
+                <h3 class="project-title">ElectroZoneBD</h3>
+                <div class="project-action-btns">
+                  <a href="https://electrozonebd.com" target="_blank" rel="noopener noreferrer" class="project-btn-icon btn-live" title="View Live Demo">
+                    <span>Live</span>
+                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                      <line x1="7" y1="17" x2="17" y2="7"></line>
+                      <polyline points="7 7 17 7 17 17"></polyline>
+                    </svg>
+                  </a>
+                  <a href="https://github.com/AhnafwadudArnab/Electrozonebd" target="_blank" rel="noopener noreferrer" class="project-btn-icon" title="View Source Code on GitHub">
+                    <span>Code</span>
+                    <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor">
+                      <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+              <p class="project-desc">
+                Online electronics shop with product browsing, categorized filtering, shopping cart, and order placement using Flutter, PHP, MySQL, and REST APIs.
+              </p>
+              <div class="project-tags-row">
+                <span class="project-tag">Flutter</span>
+                <span class="project-tag">PHP</span>
+                <span class="project-tag">MySQL</span>
+                <span class="project-tag">E-Commerce</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 4: Face Detection App -->
+          <article class="project-card">
+            <div class="project-thumb-box">
+              <img src="images/Project%20thumb/facedetection.png" alt="Face Detection App Preview" loading="lazy">
+            </div>
+            <div class="project-info-box">
+              <div class="project-title-row">
+                <h3 class="project-title">Face Detection App</h3>
+                <div class="project-action-btns">
+                  <a href="https://github.com/AhnafwadudArnab/FACE_DETECTION_APP" target="_blank" rel="noopener noreferrer" class="project-btn-icon" title="View Source Code on GitHub">
+                    <span>Code</span>
+                    <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor">
+                      <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+              <p class="project-desc">
+                Camera and live image-capture interfaces with real-time prediction result screens connected to Python and OpenCV REST API workflows.
+              </p>
+              <div class="project-tags-row">
+                <span class="project-tag">Flutter</span>
+                <span class="project-tag">Python</span>
+                <span class="project-tag">OpenCV</span>
+                <span class="project-tag">Machine Learning</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 5: Realtime Chat Application -->
+          <article class="project-card">
+            <div class="project-thumb-box">
+              <img src="images/Project%20thumb/chatapp.png" alt="Chat Application Preview" loading="lazy">
+            </div>
+            <div class="project-info-box">
+              <div class="project-title-row">
+                <h3 class="project-title">Chat Application</h3>
+                <div class="project-action-btns">
+                  <a href="https://github.com/AhnafwadudArnab/Chat-Application" target="_blank" rel="noopener noreferrer" class="project-btn-icon" title="View Source Code on GitHub">
+                    <span>Code</span>
+                    <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor">
+                      <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+              <p class="project-desc">
+                A real-time cross-platform chat application for instantaneous messaging with Firebase Firestore, user authentication, and fluid animations.
+              </p>
+              <div class="project-tags-row">
+                <span class="project-tag">Flutter</span>
+                <span class="project-tag">Firebase</span>
+                <span class="project-tag">Cloud Firestore</span>
+                <span class="project-tag">Realtime</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 6: Hangman - The Game -->
+          <article class="project-card">
+            <div class="project-thumb-box">
+              <img src="images/hangman.png" alt="Hangman Game Preview" loading="lazy">
+            </div>
+            <div class="project-info-box">
+              <div class="project-title-row">
+                <h3 class="project-title">Hangman - The Game</h3>
+                <div class="project-action-btns">
+                  <a href="https://github.com/AhnafwadudArnab/Hangman-The-game" target="_blank" rel="noopener noreferrer" class="project-btn-icon" title="View Source Code on GitHub">
+                    <span>Code</span>
+                    <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor">
+                      <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+              <p class="project-desc">
+                A classic word-guessing game where players try to reveal hidden words one letter at a time with custom graphics, audio, and score tracking.
+              </p>
+              <div class="project-tags-row">
+                <span class="project-tag">Flutter</span>
+                <span class="project-tag">Dart</span>
+                <span class="project-tag">Game Logic</span>
+                <span class="project-tag">State Management</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         Stats Counter Banner Section
+         ========================================================================== -->
+    <section class="stats-banner-section" aria-label="Key Accomplishments">
+      <div class="container stats-banner-grid">
+        <!-- Stat 1: Happy Clients / Collaborations -->
+        <div class="stat-item">
+          <div class="stat-icon-circle">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="10"></circle>
+              <path d="M8 14s1.5 2 4 2 4-2 4-2"></path>
+              <line x1="9" y1="9" x2="9.01" y2="9"></line>
+              <line x1="15" y1="9" x2="15.01" y2="9"></line>
+            </svg>
+          </div>
+          <div class="stat-content">
+            <span class="stat-number" data-target="15" data-suffix="+">15+</span>
+            <span class="stat-title">Happy Collaborations</span>
+          </div>
+        </div>
+
+        <!-- Stat 2: Projects Completed -->
+        <div class="stat-item">
+          <div class="stat-icon-circle">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="16 18 22 12 16 6"></polyline>
+              <polyline points="8 6 2 12 8 18"></polyline>
+            </svg>
+          </div>
+          <div class="stat-content">
+            <span class="stat-number" data-target="20" data-suffix="+">20+</span>
+            <span class="stat-title">Projects Completed</span>
+          </div>
+        </div>
+
+        <!-- Stat 3: Certifications & Achievements -->
+        <div class="stat-item">
+          <div class="stat-icon-circle">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"></path>
+              <path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"></path>
+              <path d="M4 22h16"></path>
+              <path d="M10 14.66V17c0 .55-.45 1-1 1H7.83a2 2 0 0 0-1.74 1.01L5 21"></path>
+              <path d="M14 14.66V17c0 .55.45 1 1 1h1.17c.75 0 1.44.41 1.74 1.01L19 21"></path>
+              <path d="M18 2H6v7a6 6 0 0 0 12 0V2Z"></path>
+            </svg>
+          </div>
+          <div class="stat-content">
+            <span class="stat-number" data-target="6" data-suffix="+">6+</span>
+            <span class="stat-title">Certifications &amp; Achievements</span>
+          </div>
+        </div>
+
+        <!-- Stat 4: Client Satisfaction -->
+        <div class="stat-item">
+          <div class="stat-icon-circle">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+            </svg>
+          </div>
+          <div class="stat-content">
+            <span class="stat-number" data-target="100" data-suffix="%">100%</span>
+            <span class="stat-title">Code Quality &amp; Satisfaction</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         Services I Offer Section
+         ========================================================================== -->
+    <section id="services" class="section services-section">
+      <div class="container">
+        <div class="section-header-center">
+          <span class="section-label">What I Do</span>
+          <h2 class="section-title">Services I Offer</h2>
+        </div>
+
+        <div class="services-grid">
+          <!-- Service 1: Mobile App Development -->
+          <div class="service-card">
+            <div class="service-icon-box">&lt;/&gt;</div>
+            <h3 class="service-title">Frontend &amp; Mobile Development</h3>
+            <p class="service-desc">
+              Building responsive, high-performance cross-platform iOS &amp; Android applications using modern Flutter and Dart technologies.
+            </p>
+          </div>
+
+          <!-- Service 2: UI/UX Implementation -->
+          <div class="service-card">
+            <div class="service-icon-box">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                <line x1="3" y1="9" x2="21" y2="9"></line>
+                <line x1="9" y1="21" x2="9" y2="9"></line>
+              </svg>
+            </div>
+            <h3 class="service-title">UI/UX Implementation</h3>
+            <p class="service-desc">
+              Converting Figma/Adobe XD designs into pixel-perfect, accessible, and interactive user interfaces with fluid animations.
+            </p>
+          </div>
+
+          <!-- Service 3: Performance Optimization -->
+          <div class="service-card">
+            <div class="service-icon-box">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"></circle>
+                <polyline points="12 6 12 12 16 10"></polyline>
+              </svg>
+            </div>
+            <h3 class="service-title">Performance Optimization</h3>
+            <p class="service-desc">
+              Improving app rendering speed, memory efficiency, 60fps animations, Core Web Vitals, and structured Provider/MVC state management.
+            </p>
+          </div>
+
+          <!-- Service 4: Backend & API Integration -->
+          <div class="service-card">
+            <div class="service-icon-box">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z"></path>
+                <path d="m12 15-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z"></path>
+                <path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0"></path>
+                <path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"></path>
+              </svg>
+            </div>
+            <h3 class="service-title">Backend &amp; API Integration</h3>
+            <p class="service-desc">
+              Integrating scalable REST APIs, Cloud Firestore, Firebase Authentication, Supabase, Node.js, and MySQL with robust offline data flows.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         Testimonials & Contact Section (Side-by-Side as in Arjun Dev Mockup)
+         ========================================================================== -->
+    <section id="contact" class="section contact-testimonials-section">
+      <div class="container testimonial-contact-grid">
+        <!-- Left: Testimonials / What Clients Say -->
+        <div class="testimonials-col">
+          <span class="section-label">Testimonials</span>
+          <h2 class="section-title">What Clients Say</h2>
+
+          <div class="testimonial-card-box">
+            <div class="quote-icon" aria-hidden="true">&ldquo;</div>
+            <p class="testimonial-text">
+              Ahnaf demonstrates an exceptional grasp of software engineering and mobile computing. His technical discipline, problem-solving mindset, and ability to build scalable, high-performance applications with clean architecture are truly impressive. A talented developer who consistently exceeds expectations.
+            </p>
+
+            <div class="testimonial-author-row">
+              <img src="images/avatar_mmc.png" alt="Mokter Mahmud Chowdhury avatar" class="author-avatar" width="48" height="48">
+              <div class="author-info">
+                <span class="author-name">Mokter Mahmud Chowdhury</span>
+                <span class="author-role">Research Scientist &amp; Innovation Lead</span>
+              </div>
+            </div>
+
+            <div class="testimonial-nav-arrows">
+              <div class="testimonial-dots">
+                <span class="t-dot active" aria-label="Slide 1"></span>
+                <span class="t-dot" aria-label="Slide 2"></span>
+                <span class="t-dot" aria-label="Slide 3"></span>
+              </div>
+              <div style="display: flex; gap: 0.5rem;">
+                <button type="button" class="testimonial-arrow-btn prev-testimonial" aria-label="Previous Testimonial">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="15 18 9 12 15 6"></polyline>
+                  </svg>
+                </button>
+                <button type="button" class="testimonial-arrow-btn next-testimonial" aria-label="Next Testimonial">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="9 18 15 12 9 6"></polyline>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: Let's Work Together / Get In Touch Form -->
+        <div class="contact-col">
+          <span class="section-label">Let's Work Together</span>
+          <h2 class="section-title">Get In Touch</h2>
+          <p class="section-subtitle">Have a project in mind or just want to say hello? Feel free to reach out.</p>
+
+          <div class="contact-quick-info">
+            <div class="c-info-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                <polyline points="22,6 12,13 2,6"></polyline>
+              </svg>
+              <a href="mailto:ahanafwadudarnob@gmail.com">ahanafwadudarnob@gmail.com</a>
+            </div>
+
+            <div class="c-info-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+              </svg>
+              <a href="tel:+8801996242974">+8801996242974</a>
+            </div>
+
+            <div class="c-info-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                <circle cx="12" cy="10" r="3"></circle>
+              </svg>
+              <span>Dhaka, Bangladesh</span>
+            </div>
+          </div>
+
+          <!-- Contact Form with Formspree Integration -->
+          <form id="contactForm" action="https://formspree.io/f/meaqjdek" method="POST" class="contact-form">
+            <div class="form-group">
+              <input type="text" name="name" class="form-input" placeholder="Your Name" required autocomplete="name">
+            </div>
+
+            <div class="form-group">
+              <input type="email" name="email" class="form-input" placeholder="Your Email" required autocomplete="email">
+            </div>
+
+            <div class="form-group">
+              <textarea name="message" class="form-input" placeholder="Your Message" rows="5" required></textarea>
+            </div>
+
+            <button type="submit" class="contact-submit-btn">
+              <span>Send Message</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="22" y1="2" x2="11" y2="13"></line>
+                <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+              </svg>
+            </button>
+
+            <div id="form-status" class="form-feedback-status" aria-live="polite"></div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==========================================================================
+       Footer (4 Columns + Copyright bar)
+       ========================================================================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top-grid">
+        <!-- Col 1: Brand Info -->
+        <div class="footer-col">
+          <a href="#home" class="brand-logo" aria-label="Ahnaf Wadud Portfolio">
+            <svg class="logo-icon-svg" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M4 26L16 4L28 26H20L16 17L12 26H4Z" fill="#ff5722"/>
+              <path d="M16 11L19.5 19H12.5L16 11Z" fill="#0b0c10"/>
+            </svg>
+            <span>AHNAF <span class="logo-orange">DEV</span></span>
+          </a>
+          <p class="footer-tagline">
+            Building fast, reliable mobile apps and high-performance digital experiences, one pixel at a time.
+          </p>
+        </div>
+
+        <!-- Col 2: Quick Links -->
+        <div class="footer-col">
+          <h4 class="footer-col-title">Quick Links</h4>
+          <ul class="footer-links-list">
+              <li><a href="#home">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#experience">Experience</a></li>
+              <li><a href="#skills">Skills</a></li>
+              <li><a href="#projects">Projects</a></li>
+              <li><a href="#services">Services</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+
+        <!-- Col 3: Follow Me -->
+        <div class="footer-col">
+          <h4 class="footer-col-title">Follow Me</h4>
+          <div class="footer-social-row">
+            <a href="https://github.com/AhnafwadudArnab" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="GitHub">
+              <svg viewBox="0 0 24 24"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+            </a>
+            <a href="https://www.linkedin.com/in/ahnaf-wadud-arnab-076657245/" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="LinkedIn">
+              <svg viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+            </a>
+            <a href="https://www.facebook.com/Ahnaf126" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="Facebook">
+              <svg viewBox="0 0 24 24"><path d="M22.675 0h-21.35c-.732 0-1.325.593-1.325 1.325v21.351c0 .731.593 1.324 1.325 1.324h11.495v-9.294h-3.128v-3.622h3.128v-2.671c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12v9.293h6.116c.73 0 1.323-.593 1.323-1.325v-21.35c0-.732-.593-1.325-1.325-1.325z"/></svg>
+            </a>
+            <a href="https://www.instagram.com/a_arn0b/" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="Instagram">
+              <svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+            </a>
+          </div>
+          <p class="footer-freelance-text">
+            Available for freelance work.<br>Let's build something amazing!
+          </p>
+        </div>
+
+        <!-- Col 4: Newsletter -->
+        <div class="footer-col">
+          <h4 class="footer-col-title">Newsletter</h4>
+          <p class="footer-sub-text">Subscribe to get updates on my latest projects and tech articles.</p>
+          <form onsubmit="event.preventDefault(); alert('Thank you for subscribing!');" class="newsletter-form-row">
+            <input type="email" placeholder="Enter your email" class="newsletter-input" required>
+            <button type="submit" class="newsletter-btn" aria-label="Subscribe">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="22" y1="2" x2="11" y2="13"></line>
+                <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+              </svg>
+            </button>
+          </form>
+        </div>
+      </div>
+
+      <!-- Bottom Bar -->
+      <div class="footer-bottom-bar">
+        <p>&copy; 2026 Ahnaf Wadud. All rights reserved.</p>
+        <p>Made with <span style="color: #ff5722;">&hearts;</span> and clean code.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Main JavaScript File -->
+  <script src="js/main.js"></script>
 </body>
-
 </html>
