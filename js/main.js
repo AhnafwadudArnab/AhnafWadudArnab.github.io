@@ -131,7 +131,7 @@ document.addEventListener('DOMContentLoaded', () => {
   // 5. Testimonials Carousel
   const testimonials = [
     {
-      quote: "Ahnaf's engineering on the RapidTest medical diagnostic client was truly exemplary. He built a high-performance Flutter mobile architecture capable of seamless QR kit scanning, instant camera photo evidence capture, and real-time Cloud Firestore synchronization under demanding field conditions. His architectural discipline, clean code, and proactive problem-solving made a substantial impact.",
+      quote: "Ahnaf did a great job developing the RapidTest mobile app with Flutter. He handled the camera integration, QR scanning, and Firebase backend really well. A skilled, hardworking developer who writes clean code.",
       name: "Mokter Mahmud Chowdhury",
       role: "Research Scientist & Innovation Lead",
       avatar: "images/avatar_mmc.png"
