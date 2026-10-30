@@ -131,7 +131,7 @@ document.addEventListener('DOMContentLoaded', () => {
   // 5. Testimonials Carousel
   const testimonials = [
     {
-      quote: "Ahnaf did a great job developing the RapidTest mobile app with Flutter. He handled the camera integration, QR scanning, and Firebase backend really well. A skilled, hardworking developer who writes clean code.",
+      quote: "Wadud did an excellent job developing the RapidTest app with Flutter. His expertise in QR scanning, camera integration, and Firebase, combined with clean coding and a strong work ethic, made him a valuable contributor to the project.",
       name: "Mokter Mahmud Chowdhury",
       role: "Research Scientist & Innovation Lead",
       avatar: "images/avatar_mmc.png"
