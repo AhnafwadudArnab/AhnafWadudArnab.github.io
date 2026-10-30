@@ -137,13 +137,13 @@ document.addEventListener('DOMContentLoaded', () => {
       avatar: "images/avatar_mmc.png"
     },
     {
-      quote: "Working with Ahnaf on our mobile application was seamless. His mastery of Flutter, state management, and API integration was instrumental to our success.",
+      quote: "Ahnaf did a fantastic job developing the Foodash delivery app with Flutter. His handling of complex cart logic, Firebase real-time order tracking, and clean API integration resulted in a smooth, high-performance mobile experience.",
       name: "Tanvir Ahmed",
       role: "Lead Software Architect",
       avatar: "images/avatar_tanvir.png"
     },
     {
-      quote: "Great communication, prompt delivery, and impressive technical skills. The UI components were responsive and polished to perfection.",
+      quote: "Collaborating with Ahnaf on the Amar Rail Sheba railway project was an impressive experience. He engineered an intuitive train route search, seat selection system, and reliable REST API workflows with exceptional attention to detail.",
       name: "Sarah Jenkins",
       role: "Engineering Director",
       avatar: "images/avatar_sarah.png"
