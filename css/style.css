@@ -391,6 +391,12 @@ img {
   line-height: 1.6;
   color: #7d8590;
   overflow-x: auto;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.hero-code-block pre::-webkit-scrollbar {
+  display: none;
 }
 
 .code-kw { color: #ff7b72; }
@@ -429,6 +435,12 @@ img {
 
 .hero-title .title-orange {
   color: var(--accent-orange);
+}
+
+.hero-role-prefix {
+  color: var(--accent-orange);
+  font-weight: 800;
+  display: inline;
 }
 
 .hero-role-wrap {
@@ -784,6 +796,19 @@ img {
 }
 
 /* 6 Info Cards Grid */
+.about-cards-col {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.about-cards-col .about-signature-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0.75rem;
+}
+
 .about-info-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -2431,5 +2456,63 @@ textarea.form-input {
 @media (max-width: 768px) {
   .competencies-grid {
     grid-template-columns: 1fr;
+  }
+}
+
+/* Mobile Dimension Refinements (< 480px) */
+@media (max-width: 480px) {
+  .hero-code-block {
+    display: none;
+  }
+
+  .hero-title {
+    font-size: clamp(2.2rem, 9.5vw, 2.85rem) !important;
+    letter-spacing: -1px;
+  }
+
+  .hero-role-wrap {
+    font-size: 0.92rem;
+    min-height: 2.75rem;
+    line-height: 1.3;
+  }
+
+  .hero-cta-group {
+    flex-direction: column;
+    width: 100%;
+    gap: 0.75rem;
+  }
+
+  .hero-cta-group .btn,
+  .hero-cta-group .resume-dropdown-wrap,
+  .hero-cta-group .resume-dropdown-btn {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .resume-dropdown-menu {
+    left: 0;
+    right: 0;
+    min-width: 100%;
+  }
+
+  .container {
+    padding-inline: 1.15rem;
+  }
+
+  .about-headline {
+    font-size: 1.45rem;
+    line-height: 1.35;
+  }
+
+  .about-skills-card {
+    padding: 1.15rem;
+  }
+
+  .about-signature {
+    font-size: 2.25rem;
+  }
+
+  .award-showcase-card {
+    padding: 1.25rem 1.35rem;
   }
 }
