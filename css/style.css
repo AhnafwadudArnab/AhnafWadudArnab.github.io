@@ -1819,7 +1819,7 @@ textarea.form-input {
 
 .footer-top-grid {
   display: grid;
-  grid-template-columns: 1.4fr 1fr 1.2fr;
+  grid-template-columns: 1.3fr 1.3fr 1fr;
   gap: 3rem;
   margin-bottom: 3.5rem;
 }
@@ -1844,6 +1844,11 @@ textarea.form-input {
   text-transform: uppercase;
   color: var(--text-white);
   margin-bottom: 1.25rem;
+}
+
+.footer-links-grid {
+  display: flex;
+  gap: 2.75rem;
 }
 
 .footer-links-list {
