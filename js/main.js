@@ -45,7 +45,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const roles = [
       'FLUTTER & FULL-STACK DEVELOPER',
       'COMPUTER SCIENCE & ENGINEERING\nSTUDENT',
-      'MOBILE APP ARCHITECT',
+      'MOBILE APP DEVELOPER',
       'PROBLEM SOLVER'
     ];
 
